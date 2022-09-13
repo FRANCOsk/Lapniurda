@@ -1,0 +1,23 @@
+.topNav{
+
+overflow: hidden;
+background-color:antiquewhite;
+font-size: 20px;
+
+}
+
+.topNav a {
+
+ text-align: center;   
+ padding: 14px 16px;
+ display: inline-block;
+ text-decoration: none;
+
+}
+
+nav {
+
+text-align: center;
+
+}
+

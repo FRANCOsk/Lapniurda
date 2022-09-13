@@ -1,0 +1,11 @@
+@font-face {
+  font-family: lapniurda-font;
+  src: url(./assets/SourceSansPro-Regular.ttf);
+}
+
+* {
+  font-family: lapniurda-font;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
