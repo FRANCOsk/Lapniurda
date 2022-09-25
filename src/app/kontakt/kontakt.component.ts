@@ -28,5 +28,17 @@ export class KontaktComponent implements OnInit {
 
   } 
 
+  insg(){
+
+    window.location.href = 'https://www.instagram.com/'
+
+  }
+
+  yout(){
+
+    window.location.href = 'https://www.youtube.com/'
+
+  }
+
 
 }

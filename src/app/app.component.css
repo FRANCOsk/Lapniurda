@@ -1,23 +1,34 @@
 .topNav{
 
 overflow: hidden;
-background-color:antiquewhite;
+background-color:burlywood;
 font-size: 20px;
+
 
 }
 
 .topNav a {
 
  text-align: center;   
- padding: 14px 80px;
+ padding: 14px 150px;
  display: inline-block;
  text-decoration: none;
-
+ color: brown; 
 }
 
 nav {
 
 text-align: center;
+
+}
+
+
+.titel {
+
+  background-color:wheat;
+  text-align:center;  
+  text-decoration:solid;
+  height: 100%;
 
 }
 
