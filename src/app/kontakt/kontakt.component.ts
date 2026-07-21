@@ -1,44 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-kontakt',
   templateUrl: './kontakt.component.html',
-  styleUrls: ['./kontakt.component.css']
+  styleUrls: ['./kontakt.component.css'],
+  standalone: false,
 })
-export class KontaktComponent implements OnInit {
-
-  constructor() {
-
-    
-
-   }
-
-  ngOnInit(): void {
-
-   
-
-
+export class KontaktComponent {
+  openFacebook(): void {
+    window.location.assign('https://www.facebook.com');
   }
 
-  fb(){
-
-    window.location.href = 'https://www.facebook.com'
-
-  } 
-
-  insg(){
-
-    window.location.href = 'https://www.instagram.com/'
-
+  openInstagram(): void {
+    window.location.assign('https://www.instagram.com/');
   }
 
-  yout(){
-
-    window.location.href = 'https://www.youtube.com/'
-
+  openYouTube(): void {
+    window.location.assign('https://www.youtube.com/');
   }
-
-
 }
