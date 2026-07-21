@@ -1,36 +1,38 @@
+<section class="center" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Contact</h2>
 
-<div class="center">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Peter" autocomplete="given-name" />
 
-<label for="name">Name</label>
-<input type="text" id="name" placeholder="Peter">    
-<label for="lastname">Lastname</label>
-<input type="text" id="lastname" placeholder="Novak">
-<label for="street">Street</label>
-<input type="text" id="street" placeholder="Hlavna">
-<label for="city">City</label>
-<input type="text" id="city" placeholder="Kosice">
-<label for="email">Email</label>
-<input type="email" id="Email" placeholder="peter@post.sk">
+  <label for="lastname">Last name</label>
+  <input type="text" id="lastname" name="lastname" placeholder="Novak" autocomplete="family-name" />
 
-<button type="button" class="btn btn-primary" style="margin: 20px;" (click)="fb()">
-     <svg class="bi" width="32" height="32" fill="currentColor">
-       <use xlink:href="assets/bootstrap-icons.svg#facebook"></use>
-     </svg>
-</button>
+  <label for="street">Street</label>
+  <input type="text" id="street" name="street" placeholder="Hlavna" autocomplete="street-address" />
 
-<button type="button" class="btn btn-primary" style="margin: 20px;"(click)="insg()">
-    <svg class="bi" width="32" height="32" fill="currentColor">
-      <use xlink:href="assets/bootstrap-icons.svg#instagram"></use>
-    </svg>
-</button>
+  <label for="city">City</label>
+  <input type="text" id="city" name="city" placeholder="Kosice" autocomplete="address-level2" />
 
-<button type="button" class="btn btn-danger" style="margin: 20px;"(click)="yout()">
-  <svg class="bi" width="32" height="32" fill="currentColor">
-    <use xlink:href="assets/bootstrap-icons.svg#youtube"></use>
-  </svg>
-</button>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="peter@post.sk" autocomplete="email" />
 
+  <div class="social-links" aria-label="Social media links">
+    <button type="button" class="btn btn-primary" (click)="openFacebook()" aria-label="Open Facebook">
+      <svg class="bi" width="32" height="32" fill="currentColor" aria-hidden="true">
+        <use href="assets/bootstrap-icons.svg#facebook"></use>
+      </svg>
+    </button>
 
+    <button type="button" class="btn btn-primary" (click)="openInstagram()" aria-label="Open Instagram">
+      <svg class="bi" width="32" height="32" fill="currentColor" aria-hidden="true">
+        <use href="assets/bootstrap-icons.svg#instagram"></use>
+      </svg>
+    </button>
 
-</div>
-
+    <button type="button" class="btn btn-danger" (click)="openYouTube()" aria-label="Open YouTube">
+      <svg class="bi" width="32" height="32" fill="currentColor" aria-hidden="true">
+        <use href="assets/bootstrap-icons.svg#youtube"></use>
+      </svg>
+    </button>
+  </div>
+</section>
